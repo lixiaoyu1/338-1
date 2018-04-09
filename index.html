@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <link href="favicon.ico"rel="shortcut icon"type="image/x-icon">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/swiper-4.1.6.min.css">
+    <script src="js/adaptive.js"></script>
+</head>
+<body>
+   <div id="m_header">
+       <div class="m_search">
+           <form action="">
+               <input type="text" placeholder="请输入关键字">
+               <input type="button" value="&#xe634;" class="iconfont">
+           </form>
+       </div>
+       <div class="m_header_right iconfont">&#xe67a;</div>
+   </div>
+   <main>
+       <div class="main_wrap m_layout">
+           <!--banner-->
+           <div class="banner">
+               <!--swiper-container-->
+               <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide"><a href="#"><img src="images/banner1.png"></a></div>
+                       <div class="swiper-slide"><a href="#"><img src="images/banner2.png"></a></div>
+                       <div class="swiper-slide"><a href="#"><img src="images/banner3.png"></a></div>
+                   </div>
+                   <!-- 如果需要分页器 -->
+                   <div class="swiper-pagination"></div>
+
+               </div>
+               <!--swiper-container end-->
+           </div>
+           <!--banner end-->
+           <nav>
+               <ul>
+                   <li>
+                       <a href="#">
+                           <img src="images/shangxin.png" alt="">
+                           <p>今日上新</p>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="images/zhibo.png" alt="">
+                           <p>领券直播</p>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="images/baoyou.png" alt="">
+                           <p>9.9包邮</p>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="images/youhuiquan.png" alt="">
+                           <p>查优惠券</p>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="images/huiyuan.png" alt="">
+                           <p>会员中心</p>
+                       </a>
+                   </li>
+               </ul>
+
+           </nav>
+           <section class="floor_notice">
+               <img src="images/banner4.jpg" alt="">
+               <div class="notice_bt">
+                   <img src="images/tuangou.jpg" alt="">
+                   <p>品牌团购 <br>
+                       <small>大品牌冰点价格</small>
+                   </p>
+                   <img src="images/xinpin.png" alt="">
+                   <p>秋季新品 <br>
+                       <small>十点开抢全包邮</small>
+                   </p>
+               </div>
+               <div class="notice_bb">
+                   <img src="images/zhuanchang.jpg" alt="">
+                   <p>品牌团购 <br>
+                       <small>大品牌冰点价格</small>
+                   </p>
+                   <img src="images/chuanyi.png" alt="">
+                   <p>秋季新品 <br>
+                       <small>十点开抢全包邮</small>
+                   </p>
+               </div>
+           </section>
+           <section class="floor_kill">
+               <div class="kill_bt">
+                   <img src="images/shijian.png" alt="">
+                   <p>每日09：00 ~11：00·满99减50</p>
+               </div>
+               <div class="kill_img">
+                   <img src="images/zi.png" alt="">
+                   <img src="images/01.png" alt="">
+                   <p>春季焕新 美包满99减40</p>
+                   <img src="images/02.png" alt="">
+                   <p>朵艾微清仓29.9元大盘点</p>
+                   <img src="images/03.png" alt="">
+                   <p>春季焕新 山女风美鞋</p>
+               </div>
+           </section>
+       </div>
+   </main>
+   <!--main end-->
+   <footer>
+       <ul>
+           <li class="tab_on">
+               <a href="">
+               </a>
+           </li>
+           <li>
+               <a href="">
+               </a>
+           </li>
+           <li>
+               <a href="">
+               </a>
+           </li>
+           <li>
+               <a href="">
+               </a>
+           </li>
+           <li>
+               <a href="">
+               </a>
+           </li>
+       </ul>
+   </footer>
+   <script src="js/swiper-4.1.6.min.js"></script>
+   <script>
+       var swiper = new Swiper('.swiper-container', {
+           loop : true,
+           autoplay: {
+               stopOnLastSlide: false,
+               disableOnInteraction: false,
+               delay: 3000,//1秒切换一次
+           },
+           pagination: {
+               el: '.swiper-pagination',
+               clickable :true,
+           },
+       });
+   </script>
+
+</body>
+</html>

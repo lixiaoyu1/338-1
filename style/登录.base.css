@@ -1,0 +1,92 @@
+/* CSS Document */
+/* CSS Document */
+*,::before,::after{margin:0; padding:0; -webkit-box-sizing:border-box; -webkit-tap-highlight:transparent;/*清除点击默认的高亮效果*/}
+
+a, article, aside, audio, b, blockquote, body, canvas, caption, dd,  details,div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, label, legend, li, menu, nav, object, ol, output, p,s, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
+{ margin: 0; padding: 0; border: 0; }
+
+ol, ul,li{ list-style: none;}
+table { border-collapse: collapse;/*表格的边线重叠*/ border-spacing: 0; }
+input,textarea{border:0 none; resize:none;/*调整尺寸*/  /*outline:none;*//*清除表单默认的蓝色边框效果*/ -webkit-appearance:none;/* 针对表单的默认的样式进行清除  比如立体效果*/}
+:focus{outline:none;}
+img{ display:block; -webkit-touch-callout:none;/*当你触摸并按住触摸目标时候，禁止或显示系统默认菜单 */}
+
+a,a:link,a:visited{ text-decoration:none; color:#343434; -webkit-touch-callout:none;}
+a:hover{ color:#ff6699;
+}
+.clearfix:after{content:""; display:block; height:0; clear:both; visibility:hidden;}
+
+.fl{float:left;}
+.fr{float:right;}
+
+html{-webkit-text-size-adjust: none;/*不调整（拉伸）字大小*/  font-size:100px;/*表示100px=1rem;       625%    62.5%*/}
+
+body{font-family: "microsoft yahei", "\534E\6587\7EC6\9ED1", Verdana, Arial, Helvetica, sans-serif; font-size:24px; background:rgba(204,204,204,1); -webkit-user-select:none; /*禁止选中内容*/}
+
+/*微软雅黑      华文细黑                                         最后一个字体：ios系统默认 */
+
+.m_layout{ max-width:7.5rem; min-width:3.2rem; width:100%;background:rgba(255,255,255,1); margin:0 auto;}
+
+
+/*文字图标的引入方法*/
+
+
+
+main{
+    width:100%;
+    max-width:7.5rem;
+    min-width:3.2rem;
+    height:10rem;
+    background:rgba(255,255,255,1);
+    margin:0 auto;
+    position:fixed;/*固定定位*/ top:0; left:0; right:0;
+    z-index: 40;
+}
+.m_header .m_layout img{
+    height: 0.35rem;
+    width: 0.35rem;
+    float: right;
+    margin-top: 0.4rem;
+    margin-right: 0.4rem;
+}
+.m_header .m_layout .m_img img{
+    height: 1.28rem;
+    width: 1.28rem;
+    margin-right: 2.5rem;
+    margin-top: 1.5rem;
+}
+.iconfont{
+    width: 5rem;
+    height: 4rem;
+    margin-top: 3.5rem;
+    margin-left: 1.25rem;
+}
+.iconfont .zi p{
+    margin-top: 0.5rem;
+    border-bottom: 0.04rem solid #bfbfbf;
+    font-size: 0.24rem;
+    color: #bfbfbf;
+}
+.iconfont .zi span{
+    float: right;
+    margin-top: 0.2rem;
+    font-size: 0.24rem;
+    color: #bfbfbf;
+}
+.iconfont .dl{
+    margin-top: 1rem;
+    text-align: center;
+}
+.iconfont .dl p{
+    height: 0.5rem;
+    width: 5rem;
+    background: #ff527f;
+    padding-top: 0.1rem;
+    font-size: 0.24rem;
+    color: white;
+}
+.iconfont .dl span {
+    font-size: 0.24rem;
+    padding-top: 0.5rem;
+    display: inline-block;
+}

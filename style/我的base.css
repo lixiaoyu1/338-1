@@ -1,0 +1,236 @@
+/* CSS Document */
+/* CSS Document */
+*,::before,::after{margin:0; padding:0; -webkit-box-sizing:border-box; -webkit-tap-highlight:transparent;/*清除点击默认的高亮效果*/}
+
+a, article, aside, audio, b, blockquote, body, canvas, caption, dd,  details,div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, label, legend, li, menu, nav, object, ol, output, p,s, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
+{ margin: 0; padding: 0; border: 0; }
+
+ol, ul,li{ list-style: none;}
+table { border-collapse: collapse;/*表格的边线重叠*/ border-spacing: 0; }
+input,textarea{border:0 none; resize:none;/*调整尺寸*/  /*outline:none;*//*清除表单默认的蓝色边框效果*/ -webkit-appearance:none;/* 针对表单的默认的样式进行清除  比如立体效果*/}
+:focus{outline:none;}
+img{ display:block; -webkit-touch-callout:none;/*当你触摸并按住触摸目标时候，禁止或显示系统默认菜单 */}
+
+a,a:link,a:visited{ text-decoration:none; color:#343434; -webkit-touch-callout:none;}
+a:hover{ color:#ff6699;
+}
+.clearfix:after{content:""; display:block; height:0; clear:both; visibility:hidden;}
+
+.fl{float:left;}
+.fr{float:right;}
+
+html{-webkit-text-size-adjust: none;/*不调整（拉伸）字大小*/  font-size:100px;/*表示100px=1rem;       625%    62.5%*/}
+
+body{font-family: "microsoft yahei", "\534E\6587\7EC6\9ED1", Verdana, Arial, Helvetica, sans-serif; font-size:24px; background:rgba(204,204,204,1); -webkit-user-select:none; /*禁止选中内容*/}
+
+/*微软雅黑      华文细黑                                         最后一个字体：ios系统默认 */
+
+.m_layout{ max-width:7.5rem; min-width:3.2rem; width:100%;background:rgba(255,255,255,1); margin:0 auto;}
+
+
+/*文字图标的引入方法*/
+main{
+    width:100%;
+    max-width:7.5rem;
+    min-width:3.2rem;
+    height:0.88rem;
+    background:rgba(255,255,255,1);
+    margin:0 auto;
+    z-index: 40;
+}
+.header{
+    width: 100%;
+    height: 10rem;
+    background: #fff;
+}
+.header_my{
+    width: 100%;
+    height: 2.9rem;
+    background: #ff527f;
+}
+.header_my .header_m img{
+    width: 0.38rem;
+    padding-top: 0.4rem;
+    margin-left: 0.4rem;
+}
+.header_my .header_m .header_x{
+    width: 0.38rem;
+    float: right;
+    margin-top: -0.8rem;
+    margin-right: 0.8rem;
+}
+.header_my .tou img{
+    width: 0.8rem;
+    padding-top: 0.8rem;
+    margin-left: 0.8rem;
+}
+.header_my .tou p{
+    color: #fcfcfc;
+    float: right;
+    margin-right: 4rem;
+    margin-top: -0.6rem;
+}
+.header_my .jifen img{
+    width: 1.63rem;
+    height: 0.57rem;
+    margin-top: -0.7rem;
+    float: right;
+}
+nav{
+    height: 2.5rem;
+    border-bottom: 0.1rem solid #e9e9e8;
+}
+.notice_my span {
+    color: #ff527f;
+    font-size: 0.3rem;
+    margin-left: 0.2rem;
+    margin-top: 0.4rem;
+   display: inline-block;
+}
+.notice_my p{
+    color: #ff527f;
+    font-size: 0.22rem;
+    float: right;
+    margin-right: 0.2rem;
+    margin-top: 0.4rem;
+    display: inline-block;
+}
+
+nav ul{
+    margin-top: 0.2rem;
+    width:100%;
+    height:100%;
+}
+nav ul li{
+    width:20%;
+    height:1.04rem;
+    float:left;
+    text-align:center;
+    margin-top:0.16rem;
+}
+nav ul li a{
+    width:100%;
+    height:100%;
+    display:block;
+}
+nav ul li a img{
+    width:0.48rem;
+    height:0.48rem;
+    margin:0 auto;
+}
+nav ul li a p{
+    font-size:0.2rem;
+    color: black;
+    margin-top:0.2rem;
+}
+section{
+    width: 7.5rem;
+    height: 5.7rem;
+    background: white;
+}
+.zi p{
+    font-size: 0.3rem;
+    color: black;
+    padding-top: 0.4rem;
+    margin-left: 0.2rem;
+}
+section ul{
+    margin-top: 0.2rem;
+    width:100%;
+    height:100%;
+}
+section ul li{
+    width:25%;
+    height:1.04rem;
+    float:left;
+    text-align:center;
+    margin-top:0.16rem;
+}
+section ul li a{
+    width:100%;
+    height:100%;
+    display:block;
+}
+section ul li a img{
+    width:0.51rem;
+    height:0.49rem;
+    margin:0 auto;
+}
+section ul li a p{
+    font-size:0.2rem;
+    color:black;
+    margin-top:0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+     width:100%;
+     max-width:7.5rem;
+     min-width:3.2rem;
+     height:0.98rem;
+     background: rgba(255,255,255,1);
+     border-top:1px solid rgba(102,102,102,0.2);
+     margin:0 auto;
+     position:fixed;
+     /*固定定位*/
+     bottom:0; left:0;
+     right:0;
+     z-index:100;
+ }
+footer ul{
+    width:100%;
+    height:100%; /*display:flex;*//*伸缩盒*/
+}
+footer ul li{/*flex:1;*/
+    width:20%; float:left;
+    padding-top:0.12rem;
+}
+footer ul li:nth-child(1) a{
+    width:40px;
+    height:68px;
+    display:block;
+    background:url(../images/shouye.png) no-repeat top center;
+    background-size:contain;
+    margin:0 auto;
+}
+footer ul li:nth-child(2) a{
+    width:42px;
+    height:70px;
+    display:block;
+    background:url(../images/fenlei.png) no-repeat top center;
+    background-size:contain;
+    margin:0 auto;
+}
+footer ul li:nth-child(3) a{
+    width:66px;
+    height:86px;
+    display:block;
+    background:url(../images/juhuasuan.png) no-repeat top center;
+    background-size:contain;
+    margin:0 auto;
+}
+footer ul li:nth-child(4) a{
+    width:66px;
+    height:86px;
+    display:block;
+    background:url(../images/gouwuche.png) no-repeat top center;
+    background-size:contain;
+    margin:0 auto;
+}
+footer ul li:nth-child(5) a{
+    width:40px;
+    height:68px;
+    display:block;
+    background:url(../images/wode.png) no-repeat top center;
+    background-size:contain;
+    margin:0 auto;
+}
